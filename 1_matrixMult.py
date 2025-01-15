@@ -34,4 +34,4 @@ if c1==r2:
     
 else:
     print("Enter appropriate matrix dimensions")
-    print("hello")
+
