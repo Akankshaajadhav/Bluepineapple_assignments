@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS</title>
+    <style>
+        #h1 {
+            padding-left: 20px;
+            padding-bottom: 40px;
+            padding-top: 40px;
+            background-color: blueviolet;
+            color: white;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            padding: 15px;
+        }
+        #p1,#p2,#p3,#p4{
+            background-color: skyblue;
+            color: white;
+            padding: 10px;
+            margin-top: 0px;
+        }
+        #p5 {
+            font-size: large;
+        }
+
+        @media screen and (min-width: 768px) {
+            .container {
+                display: flex;
+                flex-direction: row;
+            }
+            #div1{
+                margin-right: 20px;
+                flex: 1;
+            }
+            #div2{
+                flex: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1 id="h1">Chania</h1>
+    <div class="container">
+        <div id="div1">
+            <p id="p1">The Flight</p>
+            <p id="p2">The City</p>
+            <p id="p3">The Island</p>
+            <p id="p4">The Food</p>
+        </div>
+        <div id="div2">
+            <h1 id="h12">The City</h1>
+            <p id="p5">Chania is the capital of the Chania region on the island of Crete. The city can be divided in two parts, the old town and the modern city.</p>
+        </div>
+    </div>
+</body>
+</html>
