@@ -1,0 +1,35 @@
+<!-- Form Validation-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment 7</title>
+    </head>
+    <body>
+        <form style="border: 1px black solid; padding: 10px; width: 240px; background-color: antiquewhite;">
+            <label>Name : </label>
+            <input type="text" required><br><br>
+
+            <label>Email : </label>
+            <input type="email" required><br><br>
+
+            <label>Age : </label>
+            <input type="number" id="age"><br><br>
+
+            <button onclick="check()" id="btn">Submit</button><br>
+            <p id="para"></p>
+
+            <script>
+                function check() {
+                    let ageEntered=document.getElementById("age");
+                    let msg=document.getElementById("para");
+                    if(ageEntered<18){
+                        var newElement=document.createElement('p');
+                        newElement.innerHTML="Please enter appropriate age greater than 18!";
+                        msg.appendChild(newElement);
+                    }
+                }
+            </script>
+        </form>
+    </body>
+</html>

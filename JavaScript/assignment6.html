@@ -1,0 +1,24 @@
+<!-- Dynamic List Creation -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment 6</title>
+    </head>
+    <body>
+        <!-- creating empty list initially -->
+        <ul id="list"></ul>
+        <button onclick="listItem()">Add item</button>
+
+        <script>
+            let i=0;
+            function listItem() {
+                let list1=document.getElementById("list");
+                let newList=document.createElement('li');  
+                newList.innerHTML=`Item ${i}`;             //Adding new items    
+                list1.appendChild(newList);                //Appending to the previous list
+                i++;
+            }
+        </script>
+    </body>
+</html>

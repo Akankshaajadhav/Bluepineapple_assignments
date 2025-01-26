@@ -1,0 +1,28 @@
+<!-- Countdown Timer -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment 11</title>
+    </head>
+    <body>
+        <p>Timer seconds :</p><br>
+        <p id="p1"></p>
+
+        <script>
+            var time=10;           // set timer of 10 seconds
+
+            function timerFunc() {
+                if(time>=0){
+                    document.getElementById("p1").innerHTML=time + " sec remaining";
+                    time--;
+                }
+                else{
+                    clearInterval(t);
+                    document.getElementById("p1").innerHTML="Time's up !";
+                }
+            }
+            var t=setInterval(timerFunc,1000);
+        </script>
+    </body>
+</html>

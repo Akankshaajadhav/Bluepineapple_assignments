@@ -1,0 +1,29 @@
+<!-- Toggle a CSS Class-->
+
+   <!DOCTYPE html>
+   <html>
+        <head>
+            <title>Assignment 8</title>
+            <style>
+                .box{
+                    background-color: lightblue;
+                    height: 100px;
+                    width: 100px;
+                }
+                .highlight{                               /* Added new class */  
+                    background-color: red;
+                }
+            </style>
+        </head>
+        <body>
+            <div class="box" id="box"></div><br>         
+            <button onclick="changeColor()">Toggle Color</button>
+
+            <script>
+                function changeColor() {
+                    var element=document.getElementById("box");
+                    element.classList.toggle("highlight");             /*To toggle between the classes */
+                }
+            </script>
+        </body>
+   </html> 

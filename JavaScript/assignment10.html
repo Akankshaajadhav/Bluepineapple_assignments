@@ -1,0 +1,19 @@
+<!-- Dynamic Image Change -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment 10</title>
+    </head>
+    <body>
+        <img src="sunset.jpg" id="img1" height="300px" width="300px"><br><br>
+        <button onclick="changeImage()" id="btn1">Change Image</button>
+
+        <script>
+            function changeImage() {
+                document.getElementById("img1").src="daisy.jpg";
+                document.getElementById("btn1").innerHTML="Image Changed";
+            }
+        </script>
+    </body>
+</html>

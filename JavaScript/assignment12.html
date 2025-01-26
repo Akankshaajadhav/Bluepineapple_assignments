@@ -1,0 +1,42 @@
+<!-- Create a Modal -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment 12</title>
+        <style>
+            .div1 {
+                position: fixed;
+                top: 0;
+                left: 0;
+                display: none;
+            }
+            .content {
+                background: white;
+                padding: 10px;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <button onclick="showModal()" >Show Modal</button>         <!--button to show modal-->
+        <div class="div1" id="div1">
+            <div class="content">
+                <p>This is a hidden message.</p>
+                <button onclick="closeModal()">Close</button>      <!-- button to hide/close the modal-->
+            </div>
+        </div>
+
+        <script>
+            var element = document.getElementById('div1');
+            function showModal() {
+                element.style.display = 'block';
+            }
+
+            function closeModal() {
+                element.style.display = 'none';
+            }
+        </script>
+    </body>
+</html>
+
